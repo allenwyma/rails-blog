@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+
+
 .alert {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -81,11 +83,16 @@
   border-radius: 20px;
   border: 1px solid silver;
   margin: 20px 0 20px;
-  width: 400px;
+  width: 500px;
   h2 {
     font-size: 2em;
     color: white;
     line-height: 1.2em;
+    span {
+      display: block;
+      font-size: .6em;
+      margin-top: 5px;
+    }
   }
   span {
     font-size: .8em;
@@ -96,23 +103,34 @@
 
 .post:nth-child(odd) {
   background-color: rgba(64, 128, 64, 0.45);
-  margin-left: 300px;
+  margin-left: 350px;
 }
 
 .heading {
   text-align: center;
-  padding: 140px 0 40px;
+  //padding: 140px 0 40px;
+  background-color: #508dbd;
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  display: div;
+  z-index: 99999;
+  opacity: .95;
+  .btn {
+    float: right;
+    position: absolute;
+    top: 50px;
+    right:50px;
+  }
   h1 {
     line-height: 3em;
-    background-color: #508dbd;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: div;
-    z-index: 99999;
-  }
 
+  }
+}
+
+.posts-container {
+  margin-top: 150px;
 }
 
 

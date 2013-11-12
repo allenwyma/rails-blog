@@ -1,25 +1,24 @@
 <div class="heading">
     <h1>People Say</h1>
-
     <%= link_to 'New Post', new_post_path, class: 'btn btn-large' %>
 </div>
+<div class="posts-container">
+    <% @posts.each do |post| %>
 
-<% @posts.each do |post| %>
+        <div class="post">
+          <h2><%= post.title %><%= content_tag(:span, 'Published', class: 'btn disabled') if post.published %></h2>
+          <span>Author: <%= post.author.email %> <%= post.updated_at %></span>
 
-    <div class="post">
-      <h2><%= post.title %><%= content_tag(:span, 'Published', class: 'btn') if post.published %></h2>
-      <span>Author: <%= post.author.email %> <%= post.updated_at %></span>
+          <p><%= simple_format(post.content) %></p>
 
-      <p><%= simple_format(post.content) %></p>
-
-      <% if current_user == post.author %>
-          <p class='links'>
-            <%= link_to 'Edit', edit_post_path(post) %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-          </p>
-      <% end %>
-    </div>
-<% end %>
-
+          <% if current_user == post.author %>
+              <p class='links'>
+                <%= link_to 'Edit', edit_post_path(post) %>
+                <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </p>
+          <% end %>
+        </div>
+    <% end %>
+</div>
 
 
