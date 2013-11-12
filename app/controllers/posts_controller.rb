@@ -6,8 +6,10 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = 
-    if current_user && current_user.admin
+    @posts =
+    if current_user
+      Post.where(published:true) | current_user.posts.all
+    elsif current_user && current_user.admin
       Post.all
     else
       Post.where(published:true).all
