@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e65b1a84-2b36-4741-b038-15821438ab38" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
     </list>
     <ignored path="rails-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,7 +13,7 @@
     <file path="/_form.html.erb" changelist="e65b1a84-2b36-4741-b038-15821438ab38" time="1384256134628" ignored="false" />
     <file path="/index.html.erb" changelist="e65b1a84-2b36-4741-b038-15821438ab38" time="1384261148610" ignored="false" />
     <file path="/_menu.html.erb" changelist="e65b1a84-2b36-4741-b038-15821438ab38" time="1384257693065" ignored="false" />
-    <file path="/posts_controller.rb" changelist="e65b1a84-2b36-4741-b038-15821438ab38" time="1384259876121" ignored="false" />
+    <file path="/posts_controller.rb" changelist="e65b1a84-2b36-4741-b038-15821438ab38" time="1384261380085" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="17" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.7008547">
+            <state line="105" column="17" selection-start="1933" selection-end="1933" vertical-scroll-proportion="-30.882353">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="4" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.9589041">
               <folding />
             </state>
           </provider>
@@ -122,10 +129,10 @@
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_menu.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
       </list>
     </option>
   </component>
@@ -660,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="58" selection-start="467" selection-end="467" vertical-scroll-proportion="0.30821916">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="22" selection-start="171" selection-end="171" vertical-scroll-proportion="-4.375">
@@ -704,7 +704,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="17" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.7008547">
+        <state line="105" column="17" selection-start="1933" selection-end="1933" vertical-scroll-proportion="-30.882353">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="4" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.9589041">
           <folding />
         </state>
       </provider>
