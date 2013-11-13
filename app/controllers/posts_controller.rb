@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  # before_action :verify_as_admin, exce
+  before_action :verify_as_admin, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -77,6 +77,9 @@ class PostsController < ApplicationController
   end
 
   private
+    def verify_as_admin
+      redirect_to posts_url unless current_user.admin
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
