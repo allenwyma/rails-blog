@@ -1,7 +1,16 @@
-//@import "bootstrap";
+@import "bootstrap";
 
 body {
-  padding-top: 200px;
+  margin: 0;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #f2f2f2;
+}
+
+.container {
+  min-height: 500px;
 }
 
 
@@ -87,6 +96,7 @@ body {
   border: 1px solid silver;
   margin: 20px 0 20px;
   width: 500px;
+  float: left;
   h2 {
     font-size: 2em;
     color: white;
@@ -105,35 +115,61 @@ body {
 }
 
 .post:nth-child(odd) {
-  background-color: rgba(64, 128, 64, 0.45);
-  margin-left: 350px;
+  background-color: #5cb85c;
+  float: right;
 }
 
-.heading {
-  text-align: center;
-  //padding: 140px 0 40px;
-  background-color: #508dbd;
-  position: fixed;
-  top: -10px;
-  left: 0;
+.menu {
+  text-align: right;
+  background-color: #292929;
   width: 100%;
-  display: div;
   z-index: 99999;
-  opacity: .95;
-  .btn {
-    float: right;
-    position: absolute;
-    top: 50px;
-    right:50px;
-  }
+  height: 50px;
   h1 {
     line-height: 3em;
+  }
 
+  .btn-group {
+    margin-right: 100px;
+    margin-top: 9px;
   }
 }
 
 .posts-container {
-  margin-top: 150px;
+  margin: 0 auto 0 auto;
+  padding: 0 20px 0;
+  width: 800px;
+  height: 600px;
+  overflow: scroll;
+  background-color: #fbfbfb;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+footer {
+  background-color: #292929;
+  height: 50px;
+  p {
+    text-align: right;
+    color: white;
+    line-height: 50px;
+    padding-right: 50px;
+  }
+}
+
+form {
+  margin: 40px auto 90px;
+  padding: 40px 0 20px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 700px;
+  box-shadow: 1px 1px 6px #ccc;
+  background-color: #dcf8ba;
 }
 
 

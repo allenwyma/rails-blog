@@ -7,24 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'layouts/menu' %>
 
   <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "alert alert-#{key} alert-dismissable") %>
   <% end %>
-  <ul>
-    <% if user_signed_in? %>
-      <li>
-      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-      </li>
-    <% else %>
-      <li>
-      <%= link_to('Login', new_user_session_path)  %>  
-      </li>
-    <% end %>
-  </ul>
+
   <div class="container">
     <%= yield %>
   </div>
+
+  <%= render 'layouts/footer' %>
 
 </body>
 </html>

@@ -1,12 +1,3 @@
-<div class="heading">
-    <h1>People Say</h1>
-    <%= link_to 'New Post', new_post_path, class: 'btn btn-large' %>
-  <% if current_user %>
-      <%= link_to 'logout', destroy_user_session_path, method: :delete %>
-      <% else %>
-  <%= link_to "login", new_user_session_path %>
-  <% end %>
-</div>
 <div class="posts-container">
     <% @posts.each do |post| %>
 
